@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Administração de usuários</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="barra" id="barra"></header>
+<main class="pagina">
+<section class="card">
+<h2>Usuários cadastrados</h2>
+<input id="busca" class="busca" type="text" inputmode="numeric" maxlength="14" placeholder="Buscar por CPF" aria-label="Buscar por CPF">
+<p class="contagem" id="contagem"></p>
+<div class="tabela-wrap">
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>CPF</th>
+<th>Email</th>
+<th>Telefone</th>
+<th>Cidade</th>
+<th>Perfil</th>
+<th></th>
+</tr>
+</thead>
+<tbody id="corpo"></tbody>
+</table>
+</div>
+</section>
+</main>
+<div class="fundo-modal" id="fundo-modal">
+<div class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-modal">
+<h2 id="titulo-modal">Editar usuário</h2>
+<form id="form-edicao" class="form-larga" novalidate>
+<div class="grade">
+<div class="campo">
+<label for="e-nome">Nome</label>
+<input id="e-nome" name="nome" type="text">
+</div>
+<div class="campo">
+<label for="e-sobrenome">Sobrenome</label>
+<input id="e-sobrenome" name="sobrenome" type="text">
+</div>
+<div class="campo">
+<label for="e-cpf">CPF</label>
+<input id="e-cpf" name="cpf" type="text" inputmode="numeric" maxlength="14">
+</div>
+<div class="campo">
+<label for="e-telefone">Telefone</label>
+<input id="e-telefone" name="telefone" type="tel" maxlength="15">
+</div>
+<div class="campo largo">
+<label for="e-email">Email</label>
+<input id="e-email" name="email" type="email">
+</div>
+<div class="campo largo">
+<label for="e-senha">Nova senha</label>
+<input id="e-senha" name="senha" type="password" placeholder="Deixe em branco para manter" autocomplete="new-password">
+</div>
+<div class="campo largo">
+<label for="e-rua">Rua</label>
+<input id="e-rua" name="rua" type="text">
+</div>
+<div class="campo">
+<label for="e-cep">CEP</label>
+<input id="e-cep" name="cep" type="text" inputmode="numeric" maxlength="9">
+</div>
+<div class="campo">
+<label for="e-cidade">Cidade</label>
+<input id="e-cidade" name="cidade" type="text">
+</div>
+<div class="campo">
+<label for="e-estado">Estado</label>
+<select id="e-estado" name="estado"></select>
+</div>
+<div class="campo">
+<label for="e-perfil">Perfil</label>
+<select id="e-perfil" name="perfil">
+<option value="usuario">Usuário</option>
+<option value="admin">Admin</option>
+</select>
+</div>
+</div>
+<p class="erro" id="erro-edicao" role="alert"></p>
+<div class="acoes">
+<button type="button" class="btn sec" id="cancelar">Cancelar</button>
+<button type="submit" class="btn">Salvar</button>
+</div>
+</form>
+</div>
+</div>
+<script src="js/comum.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

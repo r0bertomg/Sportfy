@@ -1,0 +1,32 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Admin",
+      "sobrenome": "Sistema",
+      "cpf": "111.111.111-11",
+      "email": "admin@email.com",
+      "senha": "admin",
+      "rua": "Rua Principal",
+      "cep": "00000-000",
+      "cidade": "Sao Paulo",
+      "estado": "SP",
+      "telefone": "11999999999",
+      "perfil": "admin"
+    },
+    {
+      "nome": "Miguel",
+      "sobrenome": "Roberto",
+      "cpf": "123.456.789-10",
+      "telefone": "11111111111",
+      "email": "miguel@gmail.com",
+      "senha": "1234",
+      "rua": "Rua 5",
+      "cep": "74320-290",
+      "cidade": "Goiânia",
+      "estado": "GO",
+      "perfil": "usuario",
+      "id": 2
+    }
+  ]
+}
